@@ -2,13 +2,16 @@
     width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
 }
 
 /* header */
 
 .header {
     padding: 30px 0;
+    background-color: black;
+    background: rgb(2, 0, 36);
+    background-image: linear-gradient(to top, rgb(0, 0, 0) 20%, rgba(65, 33, 107, 1) 50%, rgba(0, 255, 38, 1) 100%);
 }
 
 .header .container {
@@ -18,7 +21,7 @@
 }
 
 .logo {
-    color: #000;
+    color: white;
     font-family: Raleway;
     font-size: 26px;
     font-style: normal;
@@ -37,11 +40,64 @@
 .nav__item {}
 
 .nav__item-link {
-    color: #212121;
+    color: white;
     font-family: Roboto;
     font-size: 14px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
     letter-spacing: 0.28px;
+}
+
+/* hero */
+
+.hero {
+    display: flex;
+    height: 100vh;
+    background-image: url(../images/spaceship-7102944.png), url(../images/earth-1756274.jpg);
+    background-repeat: no-repeat;
+    background-size: 400px, cover;
+    background-position: right top, center;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero__button {
+    display: block;
+    margin: 0 auto;
+    width: 216px;
+    height: 50px;
+    border-radius: 4px;
+    background-color: #2196F3;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    color: #FFF;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0.96px;
+}
+
+.hero__button:hover {
+    background-color: red;
+}
+
+.box__thumb {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 90px 0;
+    width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.box {
+    height: 190px;
+    width: calc(50% - 20px);
+    margin: 10px;
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 1px 3px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
 }
